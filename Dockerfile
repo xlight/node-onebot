@@ -6,6 +6,8 @@ WORKDIR /app
 COPY . .
 RUN npm up --no-save
 ENV QQACCOUNT 3449308644
+ENV ws_reverse_url []
+ENV platform 5
 CMD echo -ne '\n' | node main $QQACCOUNT
 VOLUME /app/data
 #CMD ["node", "main","3449308644"]
